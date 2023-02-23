@@ -11,3 +11,6 @@ app.get('/page1', function (req, res) {
 
 app.listen(1337, () => console.log('Marist Chatter listening on port 1337!'));
 
+/* tells node that anything in the public folder is automatically 
+accessible from the site's root path url */
+app.use(express.static('./client/public'));
