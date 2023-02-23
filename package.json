@@ -1,0 +1,23 @@
+{
+  "name": "cbauer-111-lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[D(server/app.js)",
+  "scripts": {
+    "test": "yo",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaristGormanly/cbauer-111-lab5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaristGormanly/cbauer-111-lab5/issues"
+  },
+  "homepage": "https://github.com/MaristGormanly/cbauer-111-lab5#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
