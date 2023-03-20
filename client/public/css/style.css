@@ -1,4 +1,4 @@
-body {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+body {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 * {box-sizing: border-box}
 
 /* Full-width input fields */
@@ -18,7 +18,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 hr {
   	border: 1px solid #f1f1f1;
- 	margin-bottom: 25px;
+ 	  margin-bottom: 25px;
 }
 
 /* Set a style for all buttons */
@@ -74,12 +74,16 @@ button:hover {
   .leftcolumn {   
     float: left;
     width: 75%;
+    text-align: center;
   }
   
   /* Right column */
   .rightcolumn {
     float: right;
     width: 25%;
+    top: 20%;
+    right: 0%;
+    position: absolute;
     padding-left: 20px;
   }
   
@@ -89,8 +93,20 @@ button:hover {
      text-align: left;
      padding: 10px;
      margin-top: 10px;
+     width: 100%;
+     float: none;
   }
-  
+
+  .cardcontent {
+    text-align: left;
+    width: 50%;
+    left: 0%;
+  }
+
+  .cardcontent > * {
+    width: 100%;
+  }
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -106,10 +122,10 @@ button:hover {
     margin-top: 20px;
   }
   
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
     }
-  }
+  } */

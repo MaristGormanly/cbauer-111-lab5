@@ -7,3 +7,9 @@ comments.addEventListener('keyup', function(e) {
         comments.value = comments.value.slice(0,100);
     }
 });
+
+var like = document.getElementById('like');
+var likes = document.getElementById('likes');
+like.addEventListener('click', function(e) {
+    likes.innerHTML = (Number(likes.innerHTML) + 1) + '';
+}); 
