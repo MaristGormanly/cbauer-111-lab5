@@ -1,131 +1,128 @@
-body {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-* {box-sizing: border-box}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: white;
+}
+* {
+  box-sizing: border-box
+}
 
-/* Full-width input fields */
+/* input fields for login/signup */
 input[type=text], input[type=password] {
-  	width: 100%;
-  	padding: 15px;
-  	margin: 5px 0 22px 0;
-  	display: inline-block;
-  	border: none;
-  	background: #f1f1f1;
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
 }
 
 input[type=text]:focus, input[type=password]:focus {
-	background-color: #ddd;
-	outline: none;
+   background-color: #ddd;
+   outline: none;
 }
 
 hr {
-  	border: 1px solid #f1f1f1;
- 	  margin-bottom: 25px;
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
 }
 
-/* Set a style for all buttons */
+/* style for all buttons */
 button {
-  	background-color: #04AA6D;
-  	color: white;
-  	padding: 14px 20px;
-  	margin: 8px 0;
-  	border: none;
-  	cursor: pointer;
-  	width: 100%;
-  	opacity: 0.9;
+   background-color: #04AA6D;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   opacity: 0.9;
 }
 
 button:hover {
-  opacity:1;
+   opacity:1;
 }
 
-/* Extra styles for the cancel button */
+/* styles for cancel button */
 .cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
+   background-image: url(http://localhost:1337/img/milkcat.jpeg);
+   background-size: contain;
+   padding: 14px 20px;
+   background-color: #f44336;
 }
 
-/* Float cancel and signup buttons and add an equal width */
+/* float buttons and make equal width */
 .cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
+   float: left;
+   width: 50%;
 }
 
-/* Add padding to container elements */
+/* Add padding to container */
 .container {
-  padding: 16px;
+   padding: 16px;
 }
 
 /* Clear floats */
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+   content: "";
+   clear: both;
+   display: table;
 }
 
-/* Header/Blog Title */
+/* Header */
 .header {
-    padding: 5px;
-    font-size: 40px;
-    text-align: center;
-    background: white;
-  }
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 75%;
-    text-align: center;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: right;
-    width: 25%;
-    top: 20%;
-    right: 0%;
-    position: absolute;
-    padding-left: 20px;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
-     background-color: white;
-     text-align: left;
-     padding: 10px;
-     margin-top: 10px;
-     width: 100%;
-     float: none;
-  }
+   padding: 5px;
+   font-size: 40px;
+   text-align: center;
+   background: rgb(153, 112, 0);
+}
 
-  .cardcontent {
-    text-align: left;
-    width: 50%;
-    left: 0%;
-  }
+/* Left column */
+.leftcolumn {
+   float: left;
+   width: 75%;
+   text-align: center;
+}
 
-  .cardcontent > * {
-    width: 100%;
-  }
+/* Right column */
+.rightcolumn {
+   float: right;
+   width: 30%;
+   top: 19.1%;
+   right: 0%;
+   position: absolute;
+   padding-left: 20px;
+}
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-  } */
+/* Cards/Posts for Feed */
+.card {
+   background-color: rgb(209, 209, 209);
+   text-align: left;
+   padding: 10px;
+   margin-top: 10px;
+   width: 100%;
+   float: none;
+}
+
+.cardcontent {
+   text-align: left;
+   width: 50%;
+   left: 0%;
+}
+
+.cardcontent > * {
+   width: 100%;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Footer of Main Page */
+.footer {
+   padding: 20px;
+   text-align: center;
+   background: rgb(209, 209, 209);
+   margin-top: 20px;
+}
